@@ -10,8 +10,14 @@ def main():
     days_donbass_war = (today - donbass_war_start).days
 
     return {
-        "svo": days_svo,
-        "donbass": days_donbass_war,
+        "svo": {
+            "days": days_svo,
+            "label": "Дней СВО"
+        },
+        "donbass": {
+            "days": days_donbass_war,
+            "label": "Дней Войны на Донбассе"
+        },
     }
 
 
