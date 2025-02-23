@@ -11,13 +11,17 @@ def main():
 
     return {
         "svo": {
-            "days": days_svo,
-            "label": "Дней СВО"
+            "days": days_svo + 1,
+            "label": "-й день",
+            "label_2": "СВО",
         },
+        # "-й день СВО"
         "donbass": {
-            "days": days_donbass_war,
-            "label": "Дней Войны на Донбассе"
+            "days": days_donbass_war + 1,
+            "label": "-й день",
+            "label_2": "Войны на Донбассе"
         },
+        # "-й день Войны на Донбассе"
     }
 
 
